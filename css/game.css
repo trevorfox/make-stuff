@@ -1,0 +1,57 @@
+#gameboard {
+    max-width: 720px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1E1E1E;
+}
+
+.square {
+    float:left;
+    position: relative;
+    width: 25%;
+    padding-bottom : 25%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    background-color:black;
+    overflow:hidden;
+}
+
+.content {
+    position:absolute;
+    /*height:90%; = 100% - 2*5% padding */
+    width:90%; /* = 100% - 2*5% padding */
+    padding: 5%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 80px;    
+}
+
+/*  For responsive images */
+
+.content .rs{
+    width:auto;
+    height:auto;
+    max-height:90%;
+    max-width:100%;
+}
+/*  For responsive images as background */
+
+.bg{
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+    color:#fff;
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
